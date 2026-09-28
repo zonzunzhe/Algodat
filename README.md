@@ -73,30 +73,29 @@ $$O(1) < O(\log n) < O(n) < O(n \log n) < O(n^2) < O(2^n) < O(n!)$$
 | **Merge Sort** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(n)$ |
 | **Quick Sort** | $O(n \log n)$ | $O(n \log n)$ | $O(n^2)$ | $O(\log n)$ |
 | **Heap Sort** | $O(n \log n)$ | $O(n \log n)$ | $O(n \log n)$ | $O(1)$ |
-### Algoritma Pencarian (Searching)
-| Algoritma | Kondisi Data | Kasus Terbaik (*Best*) | Rata-rata (*Average*) | Kasus Terburuk (*Worst*) |
+
 ---
+
+### Algoritma Pencarian (Searching)
+
+| Algoritma | Kondisi Data | Kasus Terbaik (*Best*) | Rata-rata (*Average*) | Kasus Terburuk (*Worst*) |
+| --- | --- | --- | --- | --- |
+| **Linear Search** | Acak / Terurut | $O(1)$ | $O(n)$ | $O(n)$ |
+| **Binary Search** | Harus Terurut | $O(1)$ | $O(\log n)$ | $O(\log n)$ |
+
 ### Kontribusi
 Kontribusi berupa penambahan materi, optimalisasi kode, perbaikan bug, atau penambahan penjelasan sangat terbuka:
-
 1. Fork repositori ini
 2. Buat branch fitur baru
    ``` bash
    git checkout -b fitur/algoritma-baru
    ```
-4. Lakukan commit perubahan
+3. Lakukan commit perubahan
    ``` bash
    git commit -m 'feat: tambah implementasi'
    ```
-6. Push ke branch
+4. Push ke branch
    ``` bash
    git push origin fitur/algoritma-baru
    ```
-8. Buat sebuah Pull Request
-
-
-
-
-| --- | --- | --- | --- | --- |
-| **Linear Search** | Acak / Terurut | $O(1)$ | $O(n)$ | $O(n)$ |
-| **Binary Search** | Harus Terurut | $O(1)$ | $O(\log n)$ | $O(\log n)$ |
+5. Buat sebuah Pull Request
