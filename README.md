@@ -82,3 +82,20 @@ $$O(1) < O(\log n) < O(n) < O(n \log n) < O(n^2) < O(2^n) < O(n!)$$
 | --- | --- | --- | --- | --- |
 | **Linear Search** | Acak / Terurut | $O(1)$ | $O(n)$ | $O(n)$ |
 | **Binary Search** | Harus Terurut | $O(1)$ | $O(\log n)$ | $O(\log n)$ |
+
+### Kontribusi
+Kontribusi berupa penambahan materi, optimalisasi kode, perbaikan bug, atau penambahan penjelasan sangat terbuka:
+1. Fork repositori ini
+2. Buat branch fitur baru
+   ``` bash
+   git checkout -b fitur/algoritma-baru
+   ```
+3. Lakukan commit perubahan
+   ``` bash
+   git commit -m 'feat: tambah implementasi'
+   ```
+4. Push ke branch
+   ``` bash
+   git push origin fitur/algoritma-baru
+   ```
+5. Buat sebuah Pull Request
