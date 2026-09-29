@@ -13,6 +13,7 @@ abstract class AbstractList {
 
     public abstract void insert(Object data);
     public abstract void tambah(Object data);
+	public abstract void delete(Object data);
     public abstract void cetak();
 }
 
@@ -37,6 +38,28 @@ public class LinkedList extends AbstractList {
             sementara = sementara.next;
         }
         sementara.next = nodeBaru;
+    }
+	
+	@Override
+	
+	public void delete(Object data) {
+        if (head == null) {
+            return;
+        }
+
+        if (head.data.equals(data)) {
+            head = head.next;
+            return;
+        }
+
+        Node sementara = head;
+        while (sementara.next != null && !sementara.next.data.equals(data)) {
+            sementara = sementara.next;
+        }
+
+        if (sementara.next != null) {
+            sementara.next = sementara.next.next;
+        }
     }
 
     @Override
