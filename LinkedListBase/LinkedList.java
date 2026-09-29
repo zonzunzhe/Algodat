@@ -1,58 +1,45 @@
 class Node {
-    int data;
+    Object data;
     Node next;
 
-    public Node(int data) {
+    public Node(Object data) {
         this.data = data;
         this.next = null;
     }
 }
 
-public class LinkedList {
+abstract class AbstractList {
     Node head;
 
-    public void tambah(int data) {
-        Node nodeBaru = new Node(data);
+    public abstract void insert(Object data);
+    public abstract void tambah(Object data);
+    public abstract void cetak();
+}
 
-        if (head == null) {
-            head = nodeBaru;
-            return;
-        }
-
-        Node sementara = head;
-        while (sementara.next != null) {
-            sementara = sementara.next;
-        }
-
-        sementara.next = nodeBaru;
-    }
-
-    public void insert(int data) {
+public class LinkedList extends AbstractList {
+    
+    @Override
+    public void insert(Object data) {
         Node nodeBaru = new Node(data);
         nodeBaru.next = head;
         head = nodeBaru;
     }
 
-    public void delete(int data) {
+    @Override
+    public void tambah(Object data) {
+        Node nodeBaru = new Node(data);
         if (head == null) {
+            head = nodeBaru;
             return;
         }
-
-        if (head.data == data) {
-            head = head.next;
-            return;
-        }
-
         Node sementara = head;
-        while (sementara.next != null && sementara.next.data != data) {
+        while (sementara.next != null) {
             sementara = sementara.next;
         }
-
-        if (sementara.next != null) {
-            sementara.next = sementara.next.next;
-        }
+        sementara.next = nodeBaru;
     }
 
+    @Override
     public void cetak() {
         Node sementara = head;
         while (sementara != null) {
