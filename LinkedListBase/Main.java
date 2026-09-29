@@ -27,15 +27,5 @@ public class Main {
         rantai.tambah(new Burung(99));
 
         rantai.cetak(); 
-
-        Node sementara = rantai.head;
-        while (sementara != null) {
-            if (sementara.data instanceof Burung) {
-                ((Burung) sementara.data).terbang(); 
-            } else if (sementara.data instanceof Mobil) {
-                ((Mobil) sementara.data).berenang(); 
-            }
-            sementara = sementara.next;
-        }
     }
 }
