@@ -61,3 +61,5 @@ dist/
 .DS_Store
 Thumbs.db
 desktop.ini
+Agent_Prompt.md
+generate_guide.py
