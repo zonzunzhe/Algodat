@@ -7,7 +7,6 @@ A simple, beginner-friendly implementation of a **Stack** data structure in Java
 ## 📁 Files in This Project
 
 * [**`Stack.java`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/Stack.java): Clean, straightforward Java code implementing an array-based stack with a simple test in `main()`.
-* [**`generate_guide.py`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/generate_guide.py): Python script that generates the formatted Word documentation guide.
 * [**`Java_Stack_Junior_Guide.docx`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/Java_Stack_Junior_Guide.docx): Complete technical guide in Microsoft Word format with tables, callout notes, and line-by-line explanations.
 * [**`Agent_Prompt.md`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/Agent_Prompt.md): Task specifications.
 
