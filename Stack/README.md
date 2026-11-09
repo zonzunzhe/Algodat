@@ -1,52 +1,27 @@
-# Beginner-Friendly Java Stack Implementation & Guide
+# Data Structure Implementation: Infix to Postfix & Queue in Java
 
-A simple, beginner-friendly implementation of a **Stack** data structure in Java using a standard fixed-size array (`int[]`), designed specifically for students and junior developers learning Data Structures (Algodat).
-
----
-
-## 📁 Files in This Project
-
-* [**`Stack.java`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/Stack.java): Clean, straightforward Java code implementing an array-based stack with a simple test in `main()`.
-* [**`generate_guide.py`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/generate_guide.py): Python script that generates the formatted Word documentation guide.
-* [**`Java_Stack_Junior_Guide.docx`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/Java_Stack_Junior_Guide.docx): Complete technical guide in Microsoft Word format with tables, callout notes, and line-by-line explanations.
-* [**`Agent_Prompt.md`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/Agent_Prompt.md): Task specifications.
+Practical implementation of **Infix to Postfix Notation Conversion** and a **Circular Queue** in Java without external libraries.
 
 ---
 
-## 🚀 How to Run
+## 📁 File Structure
 
-### 1. Compile and Run the Java Code
+* [**`InfixToPostfix.java`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/InfixToPostfix.java): Infix to Postfix conversion using a pure array-based stack (no comments).
+* [**`Queue.java`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/Queue.java): Circular Queue implementation based on fixed-capacity array (no comments).
+* [**`Main.java`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/Main.java): Driver program testing both Infix to Postfix and Queue (no comments).
+* [**`generate_guide.py`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/generate_guide.py): Python script to build the clean Microsoft Word report (`.docx`).
+* [**`F1D02510070_Stack.docx`**](file:///C:/Kuliah/Semester%203/Algodat/Stack/F1D02510070_Stack.docx): The generated Word document report.
+
+---
+
+## 🚀 How to Compile and Run
 
 ```bash
-javac Stack.java
-java Stack
+javac InfixToPostfix.java Queue.java Main.java
+java Main
 ```
 
-### 2. Generate the Word Guide (`.docx`)
-
+To regenerate the Word report:
 ```bash
-pip install python-docx
 python generate_guide.py
 ```
-
----
-
-## 📋 Stack Operations
-
-| Operation | What it Does | Complexity |
-| :--- | :--- | :---: |
-| `push(value)` | Adds a number to the top | $\mathcal{O}(1)$ |
-| `pop()` | Removes and returns the top number | $\mathcal{O}(1)$ |
-| `peek()` | Views the top number without removing it | $\mathcal{O}(1)$ |
-| `isEmpty()` | Checks if stack is empty (`top == -1`) | $\mathcal{O}(1)$ |
-| `isFull()` | Checks if stack is full (`top == capacity - 1`) | $\mathcal{O}(1)$ |
-| `size()` | Returns current number of elements (`top + 1`) | $\mathcal{O}(1)$ |
-| `printStack()` | Prints all elements from top to bottom | $\mathcal{O}(n)$ |
-
----
-
-## 💡 Quick Rules to Remember
-
-1. **`top` starts at `-1`**: Since array indexing starts at `0`, an empty stack is represented by `-1`.
-2. **Push**: Always check `isFull()` before incrementing `top`.
-3. **Pop**: Always check `isEmpty()` before accessing `arr[top]` and decrementing `top`.
